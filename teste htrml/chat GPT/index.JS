@@ -53,7 +53,7 @@ function carregarHistorico(){
 /* BUSCA */
 function buscar(){
     const campoPesquisa = document.getElementById("pesquisa").value.toLowerCase();
-    const itens = document.querySelector("card")
+    const itens = document.querySelector("card");
 
     campoPesquisa.addEventListener("input", function(e){
         const termo = e.target.value.toLowerCase();
@@ -64,7 +64,8 @@ function buscar(){
             } else {
                 item.style.display = "none";
             }
-    }
+        });
+    });
 }
 
 /* CARROSSEL */
@@ -82,4 +83,4 @@ function voltar(){
     carrossel.style.transform = "translateX(-" + (index * 300) + "px)";
 }
 
-window.onload = carregarHistorico;
+window.onload = carregarHistorico
