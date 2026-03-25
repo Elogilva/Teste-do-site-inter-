@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Patisserie</title>
+<link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+
+<header>
+
+<a href="#inicio"><img src="/imagem/logo-melhorada.png" class="logo"></a>
+
+<nav class="menu">
+<a href="#Novidades">Novidades</a>
+<a href="#Doces">Doces</a>
+<a href="#Salgados">Salgados</a>
+<a href="#Bolos">Bolos</a>
+<a href="#Bebidas">Bebidas</a>
+</nav>
+
+</header>
+
+<a href="#Perfil"><img src="/imagem/Perfil-café.png" alt="Acesso ao Perfil" class="perfil"></a>
+
+
+<div class="conteudo">
+
+    <h2>Pesquisa</h2>
+    <input type="text" id="pesquisa" placeholder="Pesquisa...">
+    <button onclick="buscar()">Buscar</button>
+    <div id="resultados" class="cards"></div>
+
+                
+<section id="inicio" class="secao">
+                <h1>Bem-vindo à Mi Patisserie</h1>
+                <p>Doceria e Cafeteria</p>
+
+                </section>
+
+                <section id="Novidades" class="secao">
+                <h2>Novidade</h2>
+
+                <div class="cards">
+
+                <div class="card">
+                <h3>Sem ideia </h3>
+                <p>ljllkjlkjllk</p>
+                </div>
+
+                <div class="card">
+                <h3>Sem criatividae</h3>
+                <p>aaaaaaaaaaaaaaa</p>
+                </div>
+
+                <div class="card">
+                <h3>Vou enlouquecer</h3>
+                <p>aaaaaaaaaaaaaaa</p>
+                </div>
+
+                </div>
+                </section>
+
+                <section id="Doces" class="secao">
+                <h2>Nossos Doces</h2>
+
+                <div class="cards">
+
+                <div class="card">
+                <h3>Macaron</h3>
+                <p>Doce francês delicado.</p>
+                </div>
+
+                <div class="card">
+                <h3>Cheesecake</h3>
+                <p>Creme suave e base crocante.</p>
+                </div>
+
+                <div class="card">
+                <h3>Brownie</h3>
+                <p>Chocolate intenso.</p>
+                </div>
+
+                </div>
+                </section>
+
+                <section id="Salgados" class="secao">
+                <h2>Nossos Salgados</h2>
+
+                <div class="cards">
+
+                <div class="card">
+                <h3>Macaron</h3>
+                <p>Doce francês delicado.</p>
+                </div>
+
+                <div class="card">
+                <h3>Cheesecake</h3>
+                <p>Creme suave e base crocante.</p>
+                </div>
+
+                <div class="card">
+                <h3>Brownie</h3>
+                <p>Chocolate intenso.</p>
+                </div>
+
+
+                <section id="Bebidas" class="secao">
+                <h2>Nossas Bebidas</h2>
+
+                <div class="cards">
+
+                <div class="card">
+                <h3>Expresso</h3>
+                <p>Café forte e encorpado.</p>
+                </div>
+
+                <div class="card">
+                <h3>Capuccino</h3>
+                <p>Café com leite cremoso.</p>
+                </div>
+
+                <div class="card">
+                <h3>Latte</h3>
+                <p>Suave e equilibrado.</p>
+                </div>
+
+                </div>
+                </section>
+
+                <div id="Bolos" class="secao">
+                <h2>Nossos Bolos</h2>
+
+                <div class="cards">
+
+                <div class="card">
+                <h3>red velvet</h3>
+                <p>Bolo vermelho com recheio cremoso.</p>
+                </div>
+
+                <div class="card">
+                <h3>Bolo de Cenoura</h3>
+                <p>Refrescante sabor de cenoura com recheio cremoso de chocolate.</p>
+                </div>
+
+                <div class="card">
+                <h3>Bolo de Chocolate</h3>
+                <p>Chocolate intenso.</p>
+                </div>
+</div>
+</div>
+
+<div class="carrinho">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="9" cy="21" r="1"></circle>
+        <circle cx="20" cy="21" r="1"></circle>
+        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+</svg>
+R$00,00
+</div>
+
+<script>
+function buscar() {
+    var texto = document.getElementById("pesquisa").value.toLowerCase();
+    var cards = document.getElementsByClassName("card");
+    var resultados = document.getElementById("resultados");
+
+    resultados.innerHTML = ""; 
+
+    for (var i = 0; i < cards.length; i++) {
+        var titulo = cards[i].getElementsByTagName("h3")[0].innerText.toLowerCase();
+
+        if (titulo.includes(texto) && texto !== "") {
+            var clone = cards[i]; 
+            resultados.appendChild(clone);
+        }
+    }
+
+    if (resultados.innerHTML === "") {
+        resultados.innerHTML = "<p>Nenhum item encontrado.</p>";
+    }
+}
+</script>
+
+
+<footer>
+<p>Mi Patisserie © 2026</p>
+</footer>
+
+
+
+</body>
+</html>

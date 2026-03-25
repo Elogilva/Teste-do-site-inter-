@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Patisserie</title>
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<header>
+<a href="#inicio"><img src="/imagem/logo-melhorada.png" class="logo"></a>
+
+<nav class="menu">
+<a href="#Novidades">Novidades</a>
+<a href="#Doces">Doces</a>
+<a href="#Salgados">Salgados</a>
+<a href="#Bolos">Bolos</a>
+<a href="#Bebidas">Bebidas</a>
+<a href="#Historico"></a>Pedidos Anteriores</a>
+</nav>
+
+
+</header>
+
+<!-- <a href="#"><img src="/imagem/profile_5987462 (1).png" class="perfil"></a> -->
+
+<div class="conteudo">
+
+<h2>Pesquisa</h2>
+<input type="text" id="pesquisa" placeholder="Pesquisar...">
+<button onclick="buscar()">Buscar</button>
+<div id="resultados" class="cards"></div>
+
+
+<section id="inicio" class="secao">
+<h1>Bem-vindo à Mi Patisserie</h1>
+<p>Doceria e Cafeteria</p>
+</section>
+
+
+<section id="Novidades" class="secao">
+<h2>Novidades</h2>
+
+<div class="carrossel">
+<button onclick="voltar()">◀</button>
+
+<div class="carrossel-container" id="carrossel">
+<div class="card">Novo Doce 1</div>
+<div class="card">Novo Doce 2</div>
+<div class="card">Novo Doce 3</div>
+</div>
+
+<button onclick="avancar()">▶</button>
+</div>
+</section>
+
+<!-- DOCES -->
+<section id="Doces" class="secao">
+<h2>Doces</h2>
+
+<div class="cards">
+<div class="card">
+<h3>Macaron</h3>
+<p>Doce francês delicado.</p>
+<button onclick="adicionarItem('Macaron', 12)">Adicionar</button>
+</div>
+
+<div class="card">
+<h3>Cheesecake</h3>
+<p>Creme suave e base crocante.</p>
+<button onclick="adicionarItem('Cheesecake', 15)">Adicionar</button>
+</div>
+
+<div class="card">
+<h3>Brownie</h3>
+<p>Chocolate intenso.</p>
+<button onclick="adicionarItem('Brownie', 10)">Adicionar</button>
+</div>
+</div>
+</section>
+
+<!-- SALGADOS -->
+<section id="Salgados" class="secao">
+<h2>Salgados</h2>
+
+<div class="cards">
+<div class="card">
+<h3>Croissant</h3>
+<p>Massa leve e amanteigada.</p>
+<button onclick="adicionarItem('Croissant', 8)">Adicionar</button>
+</div>
+</div>
+</section>
+
+<!-- BEBIDAS -->
+<section id="Bebidas" class="secao">
+<h2>Bebidas</h2>
+
+<div class="cards">
+<div class="card">
+<h3>Expresso</h3>
+<p>Café forte.</p>
+<button onclick="adicionarItem('Expresso', 6)">Adicionar</button>
+</div>
+</div>
+</section>
+
+<!-- BOLOS -->
+<section id="Bolos" class="secao">
+<h2>Bolos</h2>
+
+<div class="cards">
+<div class="card">
+<h3>Red Velvet</h3>
+<p>Bolo cremoso.</p>
+<button onclick="adicionarItem('Red Velvet', 20)">Adicionar</button>
+</div>
+</div>
+</section>
+
+<!-- CARRINHO -->
+<div class="painel-carrinho">
+<ul id="listaCarrinho"></ul>
+<p id="total">Total: R$ 0,00</p>
+<button onclick="finalizarPedido()">Finalizar</button>
+</div>
+</div>
+
+<!-- HISTÓRICO -->
+<div class="historico">
+<h2>Pedidos Anteriores</h2>
+<ul id="historicoLista"></ul>
+</div>
+
+</div>
+
+<footer>
+<p>Mi Patisserie © 2026</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

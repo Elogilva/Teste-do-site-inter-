@@ -1,0 +1,158 @@
+body{
+margin-left: 150px;
+margin-right: 0px;
+font-family: "Times New Roman", serif;
+color:#dad5d5;
+
+    background-image: url(/imagem/café-inferior1.0.png);
+    background-color: #571209;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left top, right top;
+}
+
+
+header{
+position:fixed;
+top:0;
+left: 0;
+width: 200px;
+height: 100vh;
+background-color: #340c07;
+display:flex;
+flex-direction: column;
+align-items:center;
+
+ padding-top: 20px;
+}
+
+.menu{
+flex-direction: column;
+display:flex;
+gap: 30px;
+margin-top: 70px;
+margin-bottom: 40px;
+
+}
+
+.logo{
+width:120px;
+margin-right: 20px;
+}
+
+.perfil {
+width:6% ;
+height: auto;
+position: fixed;
+margin-left:81% ;
+margin-top: 12px;
+}
+
+
+nav a{
+color:#f5d365;
+margin-left:px;
+text-decoration:none;
+
+font-size:18px;
+
+}
+
+.secao{
+
+padding:200px 0px;
+text-align:center;
+max-width: 1000px;
+margin: 0 auto;
+margin-top: 0dvb;
+
+}
+
+.cards{
+
+display:flex;
+justify-content:center;
+gap:30px;
+
+margin-top:40px;
+
+flex-wrap:wrap;
+
+}
+
+.card{
+
+background:#7c6037;
+padding:30px;
+border-radius:10px;
+width:200px;
+
+}
+
+
+.fechar{
+
+color:#d4af37;
+
+float:right;
+
+font-size:28px;
+
+cursor:pointer;
+
+}
+
+.fechar:hover{
+color:white;
+}
+
+.carrinho{
+position:fixed;
+bottom:30px;
+right:30px;
+
+border:1px solid #680000;
+padding:12px 20px;
+border-radius:20px;
+background:rgba(255, 255, 255, 0.582);
+color: rgb(0, 0, 0);
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.detalhe {
+  width: 150px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+ input {
+padding:2px;
+width:300px;
+margin-left: 32%;
+position: fixed;
+top: 20px;
+background-color: #dad5d5d2;
+ }
+
+button {
+  padding: 2px;
+  margin-left: 28%;
+  position: fixed;
+  top: 20px;
+}
+
+#resultados {
+  margin-top: 20px;
+}
+footer{
+    
+background:rgb(73, 15, 2);
+margin-bottom: -20px;
+text-align:center;
+
+padding: 0px;;*/
+
+}
+
