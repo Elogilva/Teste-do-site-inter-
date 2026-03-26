@@ -22,6 +22,7 @@ header{
 #divPesquisa{
     text-align: center;
 }
+
 #divPesquisa input{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bolder;
@@ -147,25 +148,39 @@ button{
     border-radius:10px;
 }
 
-
-.carrossel{
+#Novidades #itens{
     display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:10px;
+    justify-content: center;
+    text-align: center;
+}
+section .carrossel{
+    display:flex;
+    overflow: hidden;
+    width: 330px;
 }
 
 .carrossel-container{
     display:flex;
     margin: 20px;
     width:300px;
-    overflow: hidden;
-    transition:0.5s;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
 }
 
 .carrossel-container .card{
+    object-fit: cover;
     min-width:260px;
-    margin-right: 5px;
+    margin: 0px 20px 0px -5px;
+}
+
+#itens button{
+    background: transparent;
+    border: 2px solid #e7b614;
+    border-radius: 500px;
+    padding: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #e7b614;
 }
 
 footer{

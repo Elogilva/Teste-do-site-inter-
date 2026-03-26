@@ -51,9 +51,22 @@ function carregarHistorico(){
 }
 
 /* BUSCA */
+
+
+
 function buscar(){
+    const content = document.getElementById("resultados");
+    const inputSearch = document.getElementById("pesquisa");
+
     
+};
+
+function addHTML(item){
+    const div = document.createElement("div");
+    div.innerHTML = item;
+    content.appendChild(div);
 }
+
 
 /* CARROSSEL */
 let index = 0;
@@ -61,13 +74,13 @@ let index = 0;
 function avancar(){
     let carrossel = document.getElementById("carrossel");
     index = (index + 1) % 3;
-    carrossel.style.transform = "translateX(-" + (index * 300) + "px)";
+    carrossel.style.transform = "translateX(-" + (index * 315) + "px)";
 }
 
 function voltar(){
     let carrossel = document.getElementById("carrossel");
     index = (index - 1 + 3) % 3;
-    carrossel.style.transform = "translateX(-" + (index * 300) + "px)";
+    carrossel.style.transform = "translateX(-" + (index * 315) + "px)";
 }
 
 window.onload = carregarHistorico
