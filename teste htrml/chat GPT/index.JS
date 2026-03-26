@@ -52,20 +52,7 @@ function carregarHistorico(){
 
 /* BUSCA */
 function buscar(){
-    const campoPesquisa = document.getElementById("pesquisa").value.toLowerCase();
-    const itens = document.querySelector("card");
-
-    campoPesquisa.addEventListener("input", function(e){
-        const termo = e.target.value.toLowerCase();
-        itens.forEach(item => {
-            const nome = item.querySelector("h3").textContent.toLowerCase();
-            if(nome.includes(termo)){
-                item.style.display = "block";
-            } else {
-                item.style.display = "none";
-            }
-        });
-    });
+    
 }
 
 /* CARROSSEL */

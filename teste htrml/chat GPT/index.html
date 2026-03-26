@@ -27,11 +27,13 @@
 <!-- <a href="#"><img src="/imagem/profile_5987462 (1).png" class="perfil"></a> -->
 
 <main class="conteudo">
-
-    <h2>Pesquisa</h2>
-    <input type="text" id="pesquisa" placeholder="Pesquisar...">
-    <button onclick="buscar()">Buscar</button>
-    <div id="resultados" class="cards"></div>
+    <div id="divPesquisa">
+        <h2>Pesquisa</h2>
+        <input type="text" id="pesquisa" placeholder="Pesquisar...">
+        <button onclick="buscar()">Buscar</button>
+        <div id="resultados" class="cards"></div>
+    </div>
+    
 
 
     <section id="inicio" class="secao">
@@ -47,12 +49,12 @@
             <button onclick="voltar()">◀</button>
 
             <div class="carrossel-container" id="carrossel">
-            <div class="card">Novo Doce 1</div>
-            <div class="card">Novo Doce 2</div>
-            <div class="card">Novo Doce 3</div>
-        </div>
+                <div class="card">Novo Doce 1</div>
+                <div class="card">Novo Doce 2</div>
+                <div class="card">Novo Doce 3</div>
+            </div>
 
-        <button onclick="avancar()">▶</button>
+            <button onclick="avancar()">▶</button>
         </div>
     </section>
 

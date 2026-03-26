@@ -6,122 +6,171 @@ background:#571209;
 }
 
 header{
-position:fixed;
-top:0;
-left:0;
-width:200px;
-height:100vh;
-background:#340c07;
-display:flex;
-flex-direction:column;
-align-items:center;
-padding-top:20px;
+    position:fixed;
+    top:0;
+    left:0;
+    width:200px;
+    height:100vh;
+    background:#340c07;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-top:20px;
 
+}
 
+#divPesquisa{
+    text-align: center;
+}
+#divPesquisa input{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+
+    background-color: transparent;
+    color: white;
+
+    padding: 10px;
+    width: 200px;
+
+    border: 1px solid white;
+    border-radius: 10px 0px 0px 10px;
+
+    box-shadow: 2px 2px 5px rgb(255, 255, 255);
+
+    transition: 0.2s;
+}
+
+#divPesquisa input:focus{
+    outline: none;
+    border-color: #f5d365;
+    box-shadow: 2px 2px 5px rgb(245, 211, 101);
+
+    transition: 0.2s;
+}
+
+#divPesquisa button{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+
+    background-color: transparent;
+    color: white;
+
+    padding: 10px 20px;
+
+    border: 1px solid white;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+
+    box-shadow: 2px 2px 5px rgb(255, 255, 255);
+    
+    transition: 0.2s;
+}
+
+#divPesquisa button:hover{
+    background-color: rgba(255, 255, 255, 0.562);
+    color: #340c07;
+
+    transition: 0.2s;
 }
 
 .menu{
-display:flex;
-flex-direction:column;
-gap:30px;
-margin-top:70px;
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+    margin-top:70px;
 }
 
 .logo{
-width:120px;
+    width:120px;
 }
 
 nav a{
-color:#f5d365;
-text-decoration:none;
+    color:#f5d365;
+    text-decoration:none;
 }
 
 .secao{
-padding:100px 20px;
-text-align:center;
-max-width:1000px;
-margin:auto;
+    padding:100px 20px;
+    text-align:center;
+    max-width:1000px;
+    margin:auto;
 }
 
 .cards{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
 }
 
 .card{
-background:#7c6037;
-padding:20px;
-border-radius:10px;
-width:200px;
+    background:#7c6037;
+    padding:20px;
+    border-radius:10px;
+    width:200px;
 }
 
 .card button{
-margin-top:10px;
-background:#340c07;
-color:#f5d365;
-border:none;
-padding:5px;
-cursor:pointer;
+    margin-top:10px;
+    background:#340c07;
+    color:#f5d365;
+    border:none;
+    padding:5px;
+    cursor:pointer;
 }
 
-input{
-padding:2px;
-width:300px;
-margin-left: 32%;
-border-radius: 20%;
-}
 
 button{
-padding:2px;
+    padding:2px;
 }
 
 
 
 .painel-carrinho{
-position:fixed;
-bottom:30px;
-right:30px;
+    position:fixed;
+    bottom:30px;
+    right:30px;
 
-border:1px solid #680000;
-padding:12px 20px;
-border-radius:20px;
-background:rgba(255, 255, 255, 0.582);
-color: rgb(0, 0, 0);
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border:1px solid #680000;
+    padding:12px 20px;
+    border-radius:20px;
+    background:rgba(255, 255, 255, 0.582);
+    color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
 .historico{
-margin-top:50px;
-background:rgba(0,0,0,0.6);
-padding:20px;
-border-radius:10px;
+    margin-top:50px;
+    background:rgba(0,0,0,0.6);
+    padding:20px;
+    border-radius:10px;
 }
 
 
 .carrossel{
-display:flex;
-align-items:center;
-justify-content:center;
-gap:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
 }
 
 .carrossel-container{
-display:flex;
-overflow:hidden;
-width:300px;
-transition:0.5s;
+    display:flex;
+    margin: 20px;
+    width:300px;
+    overflow: hidden;
+    transition:0.5s;
 }
 
 .carrossel-container .card{
-min-width:300px;
+    min-width:260px;
+    margin-right: 5px;
 }
 
-footer{margin-bottom: -20px;
-text-align:center;
-
-padding: 0px;;
+footer{
+    margin-bottom: -20px;
+    text-align:center;
+    padding: 0px;
 
 }
