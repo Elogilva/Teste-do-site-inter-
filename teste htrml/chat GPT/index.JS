@@ -52,19 +52,26 @@ function carregarHistorico(){
 
 /* BUSCA */
 
-
-
 function buscar(){
-    const content = document.getElementById("resultados");
-    const inputSearch = document.getElementById("pesquisa");
+    let texto = document.getElementById("pesquisa").value.toLowerCase();
+    let cards = document.querySelectorAll(".card");
+    let resultados = document.getElementById("resultados");
+
+    resultados.innerHTML = "";
+
+    let i = 0
+    for (i = 0; i < cards.length; i++){
+        const h3 = cards[i].querySelector('.secao h3')
+        console.log(h3.innerText)
+        if (h3.innerText.toLowerCase() == texto){
+            resultados.appendChild(cards[i].cloneNode(true))
+            break
+        }
+    }
 
     
-};
-
-function addHTML(item){
-    const div = document.createElement("div");
-    div.innerHTML = item;
-    content.appendChild(div);
+    
+    
 }
 
 
